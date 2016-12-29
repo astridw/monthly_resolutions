@@ -18,20 +18,35 @@ Author: Christopher Castig | @castig
 
 .clear {
 	clear: both;
+  display: inline-block;
 }
-h1, h3 {
+h1, h3, p {
   margin: 0;
+}
+
+.alignleft{
+float: left;
 }
 
 /*-----------------------------------------------------------------------------
 02=LAYOUT
 -----------------------------------------------------------------------------*/
 #container {
-  background-color: #e6e6e6;
+  width: 1000px;
+  margin: 0 auto 0 auto; //let you center your container
+}
+
+#header{
   padding: 50px;
 }
 body{
   font-family: Lato;
+  background-color: #e6e6e6;
+}
+.post {
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-color: #747474;
 }
 /*-----------------------------------------------------------------------------
 03=MAIN
@@ -39,4 +54,18 @@ body{
 #main{
   background-color: #ffffff;
   color: #4d4d4d;
+  width: 650px;
+  float: left;
+  padding: 50px;
+}
+
+/*-----------------------------------------------------------------------------
+03=Sidebar
+-----------------------------------------------------------------------------*/
+#sidebar{
+  width: 300px;
+  float: left;
+  padding: 50px;
+  background-color: white;
+  margin: 0 0 0 15px;
 }
